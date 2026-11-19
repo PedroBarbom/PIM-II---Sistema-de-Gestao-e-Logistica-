@@ -1,8 +1,11 @@
 # PIM-II---Sistema-de-Gest-o-Log-stica-
 Sistema de Gestão Logística em C e SQLite - PIM II (ADS/UNIP)
 # Sistema de Gestao Logistica - RotaSul Logistica (PIM II)
+
 Aluno: Pedro Henrique Duarte Barbom
+
 RA: H57BFC3
+
 Disciplina: Projeto Integrado Multidisciplinar II (PIM II)
 
 ## Sobre o sistema
