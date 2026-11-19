@@ -1,6 +1,5 @@
-# PIM-II---Sistema-de-Gest-o-Log-stica-
-Sistema de Gestão Logística em C e SQLite - PIM II (ADS/UNIP)
-# Sistema de Gestao Logistica - RotaSul Logistica (PIM II)
+Sistema de Gestão e Logística em C e SQLite - PIM II/DP (ADS/UNIP)
+# Sistema de Gestao e Logistica - RotaSul Logistica
 
 Aluno: Pedro Henrique Duarte Barbom
 
@@ -33,7 +32,7 @@ Nao precisa instalar compilador nem servidor de banco de dados para rodar:
 *Obs: Na primeira vez que abrir, o programa cria sozinho o arquivo `dados_transportadora.db` na mesma pasta com dados de exemplo prontos para teste.*
 
 ## Pastas do repositorio
-* `executavel` - Executavel compilado para Windows e instrucoes de uso.
-* `src` - Codigo-fonte em C (`main2.c`) e arquivos do SQLite3 (`sqlite3.c` e `sqlite3.h`).
-* `database` - Script SQL (`modelo_fisico.sql`) com a criacao das 6 tabelas, inserts e consultas.
-* `docs` - Diagramas UML, DER do banco, fluxograma e topologia de rede.
+* `Executável/` - Executavel compilado para Windows (`GestaoLogistica.exe`) e instrucoes de uso (`LEIAME.txt`).
+* `src/` - Codigo-fonte em C (`main.c`) e arquivos do SQLite3 (`sqlite3.c` e `sqlite3.h`).
+* `DataBase/` - Script SQL (`modelo_fisico.sql`) com a criacao das 6 tabelas, inserts e consultas.
+* `Docs/` - Diagramas UML, DER do banco, fluxograma e topologia de rede.
