@@ -1,0 +1,37 @@
+# Sistema de Gestao Logistica - RotaSul Logistica (PIM II)
+
+Projeto Integrado Multidisciplinar II (PIM II) desenvolvido para o 2o semestre do curso de Analise e Desenvolvimento de Sistemas (ADS) da **UNIP**.
+
+Aluno: Pedro Henrique Duarte Barbom
+RA: H57BFC3
+Disciplina: Projeto Integrado Multidisciplinar II (PIM II)
+
+## Sobre o sistema
+Este programa foi criado em Linguagem C com banco de dados SQLite3 embutido para simular a operacao de uma transportadora ficticia (RotaSul Logistica), com matriz em Sao Paulo (SP) e filiais em Curitiba (PR), Porto Alegre (RS) e Belo Horizonte (MG).
+
+O objetivo foi juntar na pratica os conteudos do semestre (programacao estruturada, banco de dados relacional, redes e LGPD) em um unico sistema de console.
+
+## O que o programa faz
+* **Login com controle de perfil:** Aceita usuarios `ADMIN` e `OPERADOR`, oculta a senha com `*` e bloqueia apos 3 tentativas erradas.
+* **Cadastro e consulta de motoristas (LGPD):** Valida o formato do CPF e mostra o numero mascarado (`***.456.789-**`) por padrao na tela e nos relatorios.
+* **Controle de veiculos:** Cadastra placa, modelo e capacidade de carga em kg.
+* **Gestao de fretes:** Calcula o valor do frete usando uma matriz de tarifas (4 regioes x 3 faixas de peso), aplica desconto de 5% para cargas acima de 5.000 kg e permite atualizar o status da entrega.
+* **Relatorios e logs em arquivo:** Gera o arquivo `relatorio_fretes.txt` com o resumo financeiro e grava historico de sincronizacao em `sync_nuvem.log`.
+* **Consulta de rede e parametros:** Exibe as VLANs, sub-redes IPv4, gateways e equipamentos das 4 unidades, alem das configuracoes de seguranca e nuvem.
+
+## Como testar no Windows
+Nao precisa instalar compilador nem servidor de banco de dados para rodar:
+
+1. Entre na pasta `executavel` e baixe o arquivo **`GestaoLogistica.exe`** (ou clique no botao verde **Code > Download ZIP** para baixar tudo).
+2. De um duplo clique no `GestaoLogistica.exe`.
+3. Use um dos logins ja cadastrados no banco:
+   * **Admin:** usuario `admin` | senha `1234`
+   * **Operador:** usuario `operador` | senha `1234`
+
+*Obs: Na primeira vez que abrir, o programa cria sozinho o arquivo `dados_transportadora.db` na mesma pasta com dados de exemplo prontos para teste.*
+
+## Pastas do repositorio
+* `executavel` - Executavel compilado para Windows e instrucoes de uso.
+* `src` - Codigo-fonte em C (`main2.c`) e arquivos do SQLite3 (`sqlite3.c` e `sqlite3.h`).
+* `database` - Script SQL (`modelo_fisico.sql`) com a criacao das 6 tabelas, inserts e consultas.
+* `docs` - Diagramas UML, DER do banco, fluxograma e topologia de rede.
