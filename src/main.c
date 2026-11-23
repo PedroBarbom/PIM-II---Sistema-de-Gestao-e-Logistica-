@@ -343,7 +343,7 @@ void popularBancoInicial(sqlite3 *db) {
             "INSERT INTO fretes (id_motorista, id_veiculo, origem, destino, distancia_km, peso_kg, valor_frete, status) VALUES "
             "(1, 1, 0, 1, 408.0, 1200.0, 1795.20, 'Em Transito'),"
             "(2, 2, 1, 2, 710.0, 420.0, 2840.00, 'Entregue'),"
-            "(3, 3, 0, 3, 586.0, 6500.0, 3098.60, 'Em Coleta');",
+            "(3, 3, 0, 3, 586.0, 6500.0, 2839.17, 'Em Coleta');",
             NULL, NULL, NULL);
     }
 
