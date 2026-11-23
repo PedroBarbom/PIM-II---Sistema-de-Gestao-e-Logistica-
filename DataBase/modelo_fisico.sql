@@ -91,7 +91,7 @@ INSERT INTO veiculos (placa, modelo, capacidade_kg, disponivel) VALUES
 INSERT INTO fretes (id_motorista, id_veiculo, origem, destino, distancia_km, peso_kg, valor_frete, status) VALUES 
 (1, 1, 0, 1, 408.0, 1200.0, 1795.20, 'Em Transito'),
 (2, 2, 1, 2, 710.0, 420.0, 2840.00, 'Entregue'),
-(3, 3, 0, 3, 586.0, 6500.0, 3098.60, 'Em Coleta');
+(3, 3, 0, 3, 586.0, 6500.0, 2839.17, 'Em Coleta');
 
 -- Insercao das unidades de rede (Matriz SP e Filiais PR, RS e MG)
 INSERT INTO unidades_rede (codigo_regiao, nome_unidade, tipo_unidade, vlan_id, nome_vlan, subrede_ipv4, gateway, equipamento_rede, modo_conexao, ultimo_sync) VALUES 
@@ -123,3 +123,4 @@ FROM unidades_rede ORDER BY codigo_regiao;
 -- Atualizacao de status de frete e sincronizacao com a nuvem
 UPDATE fretes SET status = 'Entregue' WHERE id = 1;
 UPDATE unidades_rede SET ultimo_sync = 'Sincronizado (HTTPS/TLS)';
+
